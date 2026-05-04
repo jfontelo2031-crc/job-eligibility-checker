@@ -40,6 +40,11 @@ def evaluate_applicant(age, years_of_experience, highest_education):
        (highest_education == "college" or highest_education == "College")):
         return "Ideal Range", "Strong Candidate", "Highly Qualified"
 
+elif (36 <= age <= 45 and 1 <= years_of_experience <= 2 and
+         (highest_education == "seniorhigh" or highest_education == "Seniorhigh" or
+          highest_education == "vocational" or highest_education == "Vocational")):
+        return "Acceptable", "Entry Level", "Qualified"
+
 
 
 
