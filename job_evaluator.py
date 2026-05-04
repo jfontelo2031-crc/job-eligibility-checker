@@ -35,6 +35,12 @@ while True:
 
     return age, years_of_experience, highest_education
 
+def evaluate_applicant(age, years_of_experience, highest_education):
+    if (18 <= age <= 35 and 3 <= years_of_experience <= 10 and
+       (highest_education == "college" or highest_education == "College")):
+        return "Ideal Range", "Strong Candidate", "Highly Qualified"
+
+
 
 
 
