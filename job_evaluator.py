@@ -15,3 +15,10 @@ def get_applicant_info():
             age = int(age_input)
             break
         display_error_message()
+
+while True:
+        experience_input = input("Enter years of work experience: ")
+        if experience_input != "" and is_number(experience_input):
+            years_of_experience = int(experience_input)
+            break
+        display_error_message()
