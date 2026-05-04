@@ -8,6 +8,7 @@ def is_number(value):
             valid = False
     return valid  
 
+
 def get_applicant_info():
     while True:
         age_input = input("Enter your age: ")
@@ -22,3 +23,24 @@ while True:
             years_of_experience = int(experience_input)
             break
         display_error_message()
+
+while True:
+        highest_education = input("Enter highest education (college/seniorhigh/vocational/below): ")
+        if (highest_education == "college"    or highest_education == "College"    or
+            highest_education == "seniorhigh" or highest_education == "Seniorhigh" or
+            highest_education == "vocational" or highest_education == "Vocational" or
+            highest_education == "below"      or highest_education == "Below"):
+            break
+        display_error_message()
+
+    return age, years_of_experience, highest_education
+
+
+
+
+
+
+
+
+
+
