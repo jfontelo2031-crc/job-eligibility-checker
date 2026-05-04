@@ -49,6 +49,19 @@ elif ((age < 18 or age > 45) and years_of_experience == 0 and
           (highest_education == "below" or highest_education == "Below")):
         return "Not Eligible", "No Experience", "Not Eligible"
 
+else:
+        return "Invalid", "Invalid", "Invalid"
+
+def display_result(age_result, experience_result, education_result):
+    print("----CHECKING----")
+    if age_result == "Invalid":
+        print("Result: No matching qualification category found.")
+    else:
+        print("Age:       ", age_result)
+        print("Experience:", experience_result)
+        print("Education: ", education_result)
+
+
 
 
 
