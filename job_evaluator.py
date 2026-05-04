@@ -70,6 +70,20 @@ def ask_to_continue():
             return False
         display_error_message()
 
+def main_program():
+    while True:
+        age, years_of_experience, highest_education = get_applicant_info()
+        age_result, experience_result, education_result = evaluate_applicant(age, years_of_experience, highest_education)
+        print("")
+        display_result(age_result, experience_result, education_result)
+        print("")
+        if ask_to_continue() == False:
+            print("Thank you and Goodbye!")
+            break
+        print("")
+
+main_program()
+
 
 
 
