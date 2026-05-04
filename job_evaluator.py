@@ -61,6 +61,15 @@ def display_result(age_result, experience_result, education_result):
         print("Experience:", experience_result)
         print("Education: ", education_result)
 
+def ask_to_continue():
+    while True:
+        choice = input("Check another applicant? (yes/no): ")
+        if choice == "yes" or choice == "Yes":
+            return True
+        elif choice == "no" or choice == "No":
+            return False
+        display_error_message()
+
 
 
 
