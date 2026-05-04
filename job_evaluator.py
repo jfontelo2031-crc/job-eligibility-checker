@@ -45,6 +45,9 @@ elif (36 <= age <= 45 and 1 <= years_of_experience <= 2 and
           highest_education == "vocational" or highest_education == "Vocational")):
         return "Acceptable", "Entry Level", "Qualified"
 
+elif ((age < 18 or age > 45) and years_of_experience == 0 and
+          (highest_education == "below" or highest_education == "Below")):
+        return "Not Eligible", "No Experience", "Not Eligible"
 
 
 
